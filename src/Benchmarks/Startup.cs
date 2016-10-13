@@ -196,6 +196,7 @@ namespace Benchmarks
             // Fortunes endpoints
             if (Scenarios.DbFortunesRaw)
             {
+                app.UseResponseBuffering();
                 app.UseFortunesRaw();
             }
 
